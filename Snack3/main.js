@@ -7,13 +7,13 @@
 // sommare i numeri dispari dell'array
 
 
-let arr = ['0','1','2','3','4','5','6','7','8','9','10'];
-somma = 0;
+let arr = [0,1,2,3,4,5,6,7,8,9,10];
+let somma = 0;
 
 for(i=0; i<arr.length ; i++ ){
-  let numdispari = (arr.lenght % 2 != 0)
-  somma += numdispari;
-
+  if(i % 2 !=0){
+    somma = somma + arr[i]
+  }
 }
+console.log(somma)
 
-console.log(somma);
